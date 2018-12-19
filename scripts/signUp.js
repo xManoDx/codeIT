@@ -14,7 +14,7 @@ $(document).ready(function() {
 
 const submitForm = () => {
   // Creating form-object for sending to server
-  let data = {
+  const data = {
     name: $('#name').val(),
     secondname: $('#secondname').val(),
     email: $('#email').val(),
@@ -32,7 +32,7 @@ const submitForm = () => {
 
   console.log(dataResponse);
   // Showing where was the ERROR or clear SINGUP-FORM container to creat new elements
-  if (dataResponce.status.toLowerCase() === "ok") {
+  if (dataResponse.status.toLowerCase() === "ok") {
     $('#content-block').empty();
   } else if (dataResponse.status.toLowerCase() === "form error") {
     $(`#${dataResponse.field}`).addClass('error-input');
@@ -40,7 +40,7 @@ const submitForm = () => {
       $(`#${dataResponse.field}`).removeClass('error-input')
     }, 2000);
     $('#error-message').text(dataResponse.message);
-  } else if (dataResponce.status.toLowerCase() === "error") {
+  } else if (dataResponse.status.toLowerCase() === "error") {
     $('#error-message').text(dataResponse.message);
   }
 });
