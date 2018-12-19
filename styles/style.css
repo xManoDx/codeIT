@@ -68,8 +68,39 @@ body {
 
 .list-of-companies {
   overflow-y: scroll; }
-  .list-of-companies li {
-    list-style-type: none;
-    font-size: 50px; }
+  .list-of-companies ul {
+    padding-left: 0; }
+    .list-of-companies ul li {
+      list-style-type: none;
+      font-size: 50px;
+      cursor: pointer;
+      position: relative;
+      border-bottom: 1px solid #e9ecef;
+      font-size: 24px;
+      transition: 0.2s; }
+    .list-of-companies ul li:last-child {
+      border-bottom: 0px; }
+    .list-of-companies ul li:hover, .list-of-companies ul li:active, .list-of-companies ul li:focus {
+      background: #e9ecef; }
+
+.card-body-partners {
+  overflow-x: scroll;
+  display: -webkit-inline-box; }
+
+.partners {
+  margin-right: 10px;
+  margin-left: 10px;
+  font-weight: bold;
+  height: 200px;
+  width: 300px;
+  font-size: 40px;
+  color: #000;
+  text-align: center;
+  padding-top: 35px;
+  background: transparent;
+  border: 2px solid black; }
+
+.chosen-li {
+  background: #e9ecef; }
 
 /*# sourceMappingURL=style.css.map */

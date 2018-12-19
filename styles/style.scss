@@ -1,3 +1,5 @@
+$GreyElementColor: #e9ecef;
+
 body {
   min-width: 320px;
 }
@@ -10,7 +12,7 @@ body {
 .sign-up {
   text-align: center;
   display: block;
-  background-color: #e9ecef;
+  background-color: $GreyElementColor;
   padding-top: 10px;
   padding-bottom: 10px;
   font-weight: bold;
@@ -21,7 +23,7 @@ margin: 20px;
 
 .sign-up-container {
   border-radius: 5px;
-  border: 1px solid #e9ecef;
+  border: 1px solid $GreyElementColor;
   margin-top: 10%;
 }
 
@@ -81,8 +83,46 @@ margin: 20px;
 
 .list-of-companies{
   overflow-y: scroll;
-    li {
-    list-style-type: none;
-    font-size: 50px;
-    }
+    ul {
+      padding-left: 0;
+        li {
+          list-style-type: none;
+          font-size: 50px;
+          cursor: pointer;
+          position: relative;
+          border-bottom: 1px solid $GreyElementColor;
+          font-size: 24px;
+          transition: 0.2s;
+        }
+        li:last-child {
+          border-bottom: 0px;
+        }
+        li:hover, li:active, li:focus {
+          background: $GreyElementColor
+        }
+  }
+
+}
+.card-body-partners {
+  overflow-x: scroll;
+  display:-webkit-inline-box;
+
+}
+
+.partners {
+  margin-right: 10px;
+  margin-left: 10px;
+  font-weight: bold;
+  height: 200px;
+  width: 300px;
+  font-size:40px;
+  color:#000;
+  text-align: center;
+  padding-top: 35px;
+  background: transparent;
+  border: 2px solid black;
+}
+
+.chosen-li {
+  background: $GreyElementColor;
 }
