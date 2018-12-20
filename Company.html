@@ -14,30 +14,36 @@
     <div class="container">
       <div class="row company-container" id='first-company-blocks'>
 
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 company-blocks">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 company-blocks">
           <div class="card">
             <div class="card-header">
               Total Companies
             </div>
+            <div class="loader-container-company">
+              <div class="loader-company"></div>
+            </div>
             <div class="card-body card-body-circle" id="card-body-circle">
 
-              <div class="circle" id="circle">
+              <div id="circle" class='circle'>
               <!--this is for companies counter-->
               </div>
             </div>
           </div>
         </div>
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 company-blocks">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 company-blocks">
           <div class="card">
             <div class="card-header">
               List of Companies
+            </div>
+            <div class="loader-container-company">
+              <div class="loader-company"></div>
             </div>
             <div class="card-body list-of-companies" id="list-of-companies">
 
             </div>
           </div>
         </div>
-        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 company-blocks">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 company-blocks hide-this" id="partner">
           <div class="card">
             <div class="card-header">
               Company Partners
@@ -46,7 +52,35 @@
             </div>
           </div>
         </div>
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 company-blocks">
+          <div class="card">
+            <div class="card-header">
+              Companies by Location
+            </div>
+            <div class="loader-container-company">
+              <div class="loader-company"></div>
+            </div>
+            <div class="card-body pie-container" id="companies-location">
+              <div class="pieID pie">
 
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 company-blocks">
+          <div class="card">
+            <div class="card-header">
+              News
+            </div>
+            <div class="loader-container-news">
+              <div class="loader-news"></div>
+            </div>
+            <div class="card-body list-of-companies" id="news">
+
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -54,5 +88,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="./scripts/company.js"></script>
+  <script src="./scripts/pieChart.js"></script>
 </body>
 </html>
