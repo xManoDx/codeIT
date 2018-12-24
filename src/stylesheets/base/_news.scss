@@ -1,0 +1,19 @@
+.news-blocks {
+  padding-bottom: 10px;
+}
+
+.description {
+  text-overflow: ellipsis;
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black
+  }
+}
+
+.image-news {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

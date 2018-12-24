@@ -1,0 +1,52 @@
+$GreyElementColor: #e9ecef;
+
+body {
+  min-width: 320px;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0;
+  border-color: #ced4da;
+}
+
+.sign-up {
+  text-align: center;
+  display: block;
+  background-color: $GreyElementColor;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.sign-form {
+margin: 20px;
+}
+
+.sign-up-container {
+  border-radius: 5px;
+  border: 1px solid $GreyElementColor;
+  margin-top: 10%;
+}
+
+.submit-btn {
+  text-align: right;
+  padding-top: 5px;
+  .btn {
+    width:25%;
+  }
+}
+
+.fas {
+  width: 50px;
+  padding-top: 10px;
+}
+
+#error-message {
+  color: red;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.error-input {
+  border-color: red;
+}
